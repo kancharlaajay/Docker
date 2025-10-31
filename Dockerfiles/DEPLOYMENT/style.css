@@ -1,0 +1,155 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #0066cc;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.menu {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#search-bar {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.cart {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+#cart-count {
+  background: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background: #004080;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  padding-top: 60px;
+}
+
+.side-menu ul {
+  list-style: none;
+}
+
+.side-menu li {
+  margin: 20px 0;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.side-menu a:hover {
+  background: #0059b3;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e6f2ff;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Products */
+.products {
+  padding: 40px 20px;
+  background: white;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product-card button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.product-card button:hover {
+  background: #004d99;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0066cc;
+  color: white;
+  padding: 10px;
+}

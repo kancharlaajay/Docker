@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kancharla Cycle Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="menu" onclick="toggleMenu()">☰</div>
+    <h1 class="logo">Kancharla Cycle Store</h1>
+    <input type="text" id="search-bar" placeholder="Search cycles...">
+    <div class="cart" onclick="viewCart()">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <!-- Side Menu -->
+  <nav id="side-menu" class="side-menu">
+    <ul>
+      <li><a href="#home" onclick="closeMenu()">Home</a></li>
+      <li><a href="#cycles" onclick="closeMenu()">Cycles</a></li>
+      <li><a href="#repairs" onclick="closeMenu()">Repair Section</a></li>
+      <li><a href="#about" onclick="closeMenu()">About Us</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Welcome to Kancharla Cycle Store</h2>
+    <p>Your trusted destination for strong and reliable cycles at reasonable prices.</p>
+    <p>We also provide a dedicated repair section to keep your rides smooth and safe.</p>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products" id="cycles">
+    <h2>Available Cycles</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150" alt="Mountain Bike">
+        <h3>Mountain Bike</h3>
+        <p>Strong and durable for rough terrains.</p>
+        <button onclick="addToCart('Mountain Bike')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150" alt="City Bike">
+        <h3>City Bike</h3>
+        <p>Comfortable and smooth for city rides.</p>
+        <button onclick="addToCart('City Bike')">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150" alt="Kids Bike">
+        <h3>Kids Bike</h3>
+        <p>Safe and fun rides for children.</p>
+        <button onclick="addToCart('Kids Bike')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repair Section -->
+  <section class="repairs" id="repairs">
+    <h2>Repair Services</h2>
+    <p>We provide top-notch repair services to ensure your cycles are always in excellent condition.</p>
+  </section>
+
+  <!-- About Us -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p><strong>Owner:</strong> Kancharla Kumar Narayana Murthy</p>
+    <p><strong>Address:</strong> East Godavari District, Korukonda</p>
+    <p>Our specialty is providing good and strong cycles at reasonable prices and a reliable repair section.</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Visit us at the above address or call for more details.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kancharla Cycle Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
